@@ -1,0 +1,57 @@
+<div class="container">
+  <div class="title d-flex">
+    <h1 class="display-2 mb-4 mx-auto">
+      SafeRoad Web Application
+    </h1>
+  </div>
+
+
+  <div class="d-flex">
+    <div class="button mx-auto my-4 ">
+      <button class="btn btn-light border border-secondary" tooltip="Enviar Relatório"
+        (click)="feedback()"><strong>Feedback</strong></button>
+
+      <button class="btn btn-light ml-4 border border-secondary" tooltip="Exibir Ocorrências"
+        (click)="ocorrencias()"><strong>Ocorrências</strong></button>
+    </div>
+  </div>
+
+  <div *ngIf="temDados" class="tabela d-flex">
+    <table class="table w-75 table-dark table-striped mt-4 mx-auto">
+      <thead>
+        <th>ID </th>
+        <th>Usuário</th>
+        <th>Descrição</th>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td>01</td>
+          <td>Zumbi Gordao</td>
+          <td>Bateu o carro na zumbilandia</td>
+        </tr>
+
+        <tr>
+          <td>02</td>
+          <td>Semerdião</td>
+          <td>Zuou o cyberpunk</td>
+        </tr>
+
+        <tr>
+          <td>03</td>
+          <td>Vinicios</td>
+          <td>Não colou no role</td>
+        </tr>
+
+      </tbody>
+    </table>
+  </div>
+</div>
+
+
+<script>
+  $(function () {
+    $('[data-toggle="tooltip"]').tooltip()
+  })
+
+</script>
