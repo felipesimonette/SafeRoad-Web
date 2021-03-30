@@ -5,6 +5,7 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { TooltipModule } from 'ngx-bootstrap/tooltip';
 import { LoginComponent } from './login/login.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -17,7 +18,8 @@ import { LoginComponent } from './login/login.component';
   imports: [
     TooltipModule.forRoot(),
     BrowserModule,
-    TooltipModule
+    TooltipModule,
+    ReactiveFormsModule
   ],
   
   providers: [],
