@@ -1,1 +1,29 @@
-<p>LOGUINHO</p>
+<div class="container">
+	<div class="title d-flex">
+		<h1 class="display-2 mb-4 mx-auto">Login</h1>
+	</div>
+
+	<form [formGroup]="formLogin" (ngSubmit)="autenticar()">
+		<div class="form-group">
+			<div class="campos-form d-flex flex-column align-items-center">
+				<div class="row w-50">
+					<div class="col">
+						<input type="email" class="border border-secondary form-control mx-auto mt-2" placeholder="E-mail" formControlName="email">
+					</div>
+				</div>
+				<div class="row w-50">
+					<div class="col">
+						<input type="password" class="border border-secondary form-control mx-auto mt-2" placeholder="Senha" formControlName="senha">
+					</div>
+				</div>
+			</div>
+			<div class="botoes d-flex flex-column align-items-center">
+				<div class="row">
+					<div class="col">
+						<button type="submit" class="px-4 btn btn-primary mx-auto mb-4 mt-2">Entrar</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</form>
+</div>
