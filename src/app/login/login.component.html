@@ -5,22 +5,22 @@
 
 	<form [formGroup]="formLogin" (ngSubmit)="autenticar()">
 		<div class="form-group">
-			<div class="campos-form d-flex flex-column align-items-center">
+			<div class="campos-form d-flex flex-column align-items-center my-2">
 				<div class="row w-50">
 					<div class="col">
-						<input type="email" class="border border-secondary form-control mx-auto mt-2" placeholder="E-mail" formControlName="email">
+						<input type="email" class="border border-secondary form-control mx-auto my-3" placeholder="E-mail" formControlName="email" #email>
 					</div>
 				</div>
 				<div class="row w-50">
 					<div class="col">
-						<input type="password" class="border border-secondary form-control mx-auto mt-2" placeholder="Senha" formControlName="senha">
+						<input type="password" class="border border-secondary form-control mx-auto mt-2" placeholder="Senha" formControlName="senha" #senha>
 					</div>
 				</div>
 			</div>
-			<div class="botoes d-flex flex-column align-items-center">
-				<div class="row">
-					<div class="col">
-						<button type="submit" class="px-4 btn btn-primary mx-auto mb-4 mt-2">Entrar</button>
+			<div class="botoes d-flex flex-column align-items-center my-2">
+				<div class="row my-4">
+					<div class="col my-4">
+						<button type="submit" class="px-4 btn btn-primary mx-auto mt-2">Entrar</button>
 					</div>
 				</div>
 			</div>
