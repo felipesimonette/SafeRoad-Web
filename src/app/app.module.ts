@@ -5,6 +5,8 @@ import { AppRoutingModule, routingComponents } from './app-routing/app-routing.m
 import { AppComponent } from './app.component';
 import { TooltipModule } from 'ngx-bootstrap/tooltip';
 import { ReactiveFormsModule } from '@angular/forms';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 
 @NgModule({
@@ -18,7 +20,9 @@ import { ReactiveFormsModule } from '@angular/forms';
     BrowserModule,
     TooltipModule,
     ReactiveFormsModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    FontAwesomeModule
   ],
   
   providers: [],
