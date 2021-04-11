@@ -41,7 +41,7 @@ export class LoginComponent implements OnInit {
     }
     else {
       if (this.emailInput.nativeElement.value === this.emailBase && this.senhaInput.nativeElement.value === this.senhaBase){
-        alert("Login efetuado com sucesso!");
+        // alert("Login efetuado com sucesso!");
         this.router.navigate(['/home']);
 
       }

@@ -8,11 +8,13 @@ import { Component, OnInit } from '@angular/core';
 export class HomeComponent implements OnInit {
 
   public temDados: boolean = false;
+  public fechar: boolean = false;
 
 
   constructor() { }
 
   ngOnInit(): void {
+    this.ocorrencias();
   }
 
   ocorrencias(): void{
@@ -20,7 +22,14 @@ export class HomeComponent implements OnInit {
   }
 
   feedback(): void{
-   
+    this.fechar = true;
   }
 
+  close(): void{
+    this.fechar = !this.fechar;
+  }
+
+  confirmar(): void{
+   alert('feedbéquer enviado');
+  }
 }
